@@ -1,0 +1,11 @@
+universe = vanilla
+Executable = cmsRun.sh
+Should_Transfer_Files = YES
+WhenToTransferOutput = ON_EXIT
+Transfer_Input_Files = cmsRun.sh, step2.sh, /eos/uscms/store/user/jprinz/RELVAL_QCD_911patch1_GEN_SIM/329133A0-A84A-E711-8AAC-0CC47A4D76C8.root
+Output = logs/sleep_\$(Cluster)_\$(Process).stdout
+Error = logs/sleep_\$(Cluster)_\$(Process).stderr
+Log = logs/sleep_\$(Cluster)_\$(Process).log
+Arguments = 
+Queue 1
+
